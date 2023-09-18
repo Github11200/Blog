@@ -13,7 +13,7 @@ export const ReactJSPost = ({ postIndex }) => {
                 <Link to="/" className="w-full">
                     <div className="inline-flex flex-nowrap items-center justify-center w-full mx-0">
                         <img
-                            src="../../../public/temporary.png"
+                            src="https://th.bing.com/th/id/OIP.UXBVa-WrPVbQOtkAo9u4rwHaHW?pid=ImgDet&rs=1"
                             className="rounded-full w-[4rem] mr-[0.8%]"
                         />
                         <h2 className="text-4xl">Blog Name</h2>
