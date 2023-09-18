@@ -1,20 +1,23 @@
 import Posts from "../PostData";
+import { useContext } from "react";
 import { Link } from "react-router-dom";
+import { ThemeContext } from "../../App";
 
 // This is the entire post once the user clicks on it
 // eslint-disable-next-line react/prop-types
 export const ReactJSPost = ({ postIndex }) => {
     const targetPost = Posts[postIndex];
+    const theme = useContext(ThemeContext);
 
     // Get the post that you want to display and display all of the information
     return (
-        <>
-            <div className="flex justify-center mt-10 hover:bg-slate-500 w-[19rem] mx-auto py-2">
+        <div data-theme={theme} className="pt-10">
+            <div className="flex justify-center hover:bg-primary w-[19rem] mx-auto py-2 rounded-2xl">
                 <Link to="/" className="w-full">
                     <div className="inline-flex flex-nowrap items-center justify-center w-full mx-0">
                         <img
                             src="https://th.bing.com/th/id/OIP.UXBVa-WrPVbQOtkAo9u4rwHaHW?pid=ImgDet&rs=1"
-                            className="rounded-full w-[4rem] mr-[0.8%]"
+                            className="rounded-full w-[4rem] mr-4"
                         />
                         <h2 className="text-4xl">Blog Name</h2>
                     </div>
@@ -60,6 +63,6 @@ export const ReactJSPost = ({ postIndex }) => {
                     })}
                 </div>
             </div>
-        </>
+        </div>
     );
 };

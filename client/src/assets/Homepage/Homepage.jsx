@@ -1,28 +1,28 @@
 import { PostBox } from "./PostBox";
 import Posts from "../PostData";
 import { Outlet, useLocation } from "react-router";
-import { useEffect, useState, createContext } from "react";
-
-const ThemeContext = createContext();
+import { useContext, useEffect, useState } from "react";
+import { ThemeContext } from "../../App";
+import { ThemeToggle } from "./ThemeToggle";
 
 // This is the homepage component which is the first page the user will see
 export const Homepage = () => {
     const location = useLocation(); // This stores the location of the current page
     const [currentPath, setCurrentPath] = useState(location.pathname); // This stores the current path from the useLocation hook
-    const [theme, setTheme] = useState("forest");
+    const theme = useContext(ThemeContext);
 
     // Update the path whenever it is changed
     useEffect(() => setCurrentPath(location.pathname), [location, currentPath]);
 
     return (
-        <ThemeContext.Provider value={theme}>
+        <div data-theme={theme}>
             {/*********************** Information about the blog ***********************/}
             {/* If the current page contains /posts, then only display the title of the website and the content of the post */}
 
             {/* Otherwise if the current path does not contain /posts then display the homepage */}
             {!currentPath.includes("/posts") && (
                 <div className="grid justify-items-center" data-theme={theme}>
-                    <div className="px-[8%] w-full py-[8%] mb-[5%] bg-secondary">
+                    <div className="px-[8%] w-full py-[8%] mb-[5%] bg-secondary grid justify-items-center">
                         <h1 className="text-9xl mb-[4%] text-center">
                             Blog Name
                         </h1>
@@ -30,6 +30,7 @@ export const Homepage = () => {
                             Anything and everything you need to know about
                             front-end web development, all in one place!
                         </h2>
+                        <ThemeToggle />
                     </div>
                     <h3 className="text-6xl">Posts</h3>
                     <input
@@ -56,6 +57,6 @@ export const Homepage = () => {
                 </div>
             )}
             <Outlet />
-        </ThemeContext.Provider>
+        </div>
     );
 };
