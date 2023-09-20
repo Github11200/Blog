@@ -1,13 +1,12 @@
 import Posts from "../PostData";
-import { useContext, useEffect } from "react";
+import { useEffect } from "react";
 import { Link } from "react-router-dom";
-import { ThemeContext } from "../../App";
+import { theme } from "../Homepage/ThemeToggle";
 
 // This is the entire post once the user clicks on it
 // eslint-disable-next-line react/prop-types
 export const ReactJSPost = ({ postIndex }) => {
     const targetPost = Posts[postIndex];
-    const theme = useContext(ThemeContext);
 
     useEffect(() => {
         window.scroll(0, 0);
@@ -16,7 +15,7 @@ export const ReactJSPost = ({ postIndex }) => {
     // Get the post that you want to display and display all of the information
     return (
         <div data-theme={theme} className="pt-10">
-            <div className="flex justify-center hover:bg-primary w-[19rem] mx-auto py-2 rounded-2xl">
+            <div className="flex justify-center w-[19rem] mx-auto py-2 rounded-2xl mb-6">
                 <Link to="/" className="w-full">
                     <div className="inline-flex flex-nowrap items-center justify-center w-full mx-0">
                         <img
@@ -52,11 +51,14 @@ export const ReactJSPost = ({ postIndex }) => {
                     className="w-[57rem] mb-[5rem] rounded-3xl mx-[20%]"
                 />
                 {/* Display each of the sections with their corresponding titles and paragraphs */}
-                <div className="w-[60%]">
+                <div className="w-[50%]">
                     {targetPost.content.map((object, index) => {
                         return (
-                            <section key={index}>
-                                <h2 className="text-[3.4em] mb-8">
+                            <section
+                                key={index}
+                                className="mb-[4rem] leading-loose"
+                            >
+                                <h2 className="text-[3.4em] mb-5">
                                     {object.sectionTitle}
                                 </h2>
                                 <p className="mb-4 text-[1.5em]">

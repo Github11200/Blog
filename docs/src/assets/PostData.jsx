@@ -10,7 +10,7 @@ let Posts = [
         imageSrc:
             "https://th.bing.com/th/id/OIP.HLxLvGJV-6r8ZR8AK4F9KAHaEO?pid=ImgDet&rs=1",
         summary:
-            "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Expedita, nam esse ratione est dolorem odio soluta sint qui, illo reprehenderit inventore, distinctio tempore? Numquam fuga dignissimos quae alias, voluptas tenetur.",
+            "React JS is a very popular framework and has revolutionized the way we create UIs, but what is it?, and how has it become such a popular JavasScript library powering some of the biggest companies in the world?",
         bannerImage:
             "https://th.bing.com/th/id/OIP.HLxLvGJV-6r8ZR8AK4F9KAHaEO?pid=ImgDet&rs=1",
         content: [
@@ -46,7 +46,7 @@ let Posts = [
         imageSrc:
             "https://th.bing.com/th/id/R.bb905ea51e306d4fd56252cffcbc39b1?rik=AaSB2Oy0GcTqkA&riu=http%3a%2f%2fsmartaddons.s3.amazonaws.com%2fimages%2fblog%2fJoomla%2fyt-shortcode%2fcss3-boostrap.jpg&ehk=Ms6AFyLSoO8xedBDuPwrCOy80UdVU8%2bjIZvYOWJ43Is%3d&risl=&pid=ImgRaw&r=0",
         summary:
-            "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Expedita, nam esse ratione est dolorem odio soluta sint qui, illo reprehenderit inventore, distinctio tempore? Numquam fuga dignissimos quae alias, voluptas tenetur.",
+            "CSS and Bootstrap have for a very long time been the best ways to style websites, but now there's a new tool, called Tailwind CSS, and it is completely changing the way we design these UIs and makes it much more efficient, fast, and even fun.",
         bannerImage:
             "https://th.bing.com/th/id/R.bb905ea51e306d4fd56252cffcbc39b1?rik=AaSB2Oy0GcTqkA&riu=http%3a%2f%2fsmartaddons.s3.amazonaws.com%2fimages%2fblog%2fJoomla%2fyt-shortcode%2fcss3-boostrap.jpg&ehk=Ms6AFyLSoO8xedBDuPwrCOy80UdVU8%2bjIZvYOWJ43Is%3d&risl=&pid=ImgRaw&r=0",
         content: [

@@ -1,15 +1,15 @@
 import { PostBox } from "./PostBox";
 import Posts from "../PostData";
 import { Outlet, useLocation } from "react-router";
-import { useContext, useEffect, useState } from "react";
-import { ThemeContext } from "../../App";
+import { useEffect, useState } from "react";
 import { ThemeToggle } from "./ThemeToggle";
+
+import { theme } from "./ThemeToggle";
 
 // This is the homepage component which is the first page the user will see
 export const Homepage = () => {
     const location = useLocation(); // This stores the location of the current page
     const [currentPath, setCurrentPath] = useState(location.pathname); // This stores the current path from the useLocation hook
-    const theme = useContext(ThemeContext);
 
     // Update the path whenever it is changed
     useEffect(() => setCurrentPath(location.pathname), [location, currentPath]);

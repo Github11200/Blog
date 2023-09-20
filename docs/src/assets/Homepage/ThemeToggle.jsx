@@ -1,11 +1,13 @@
-import React, { useContext, useEffect, useState } from "react";
-import { ThemeContext } from "../../App";
+import { useEffect, useState } from "react";
+
+export let theme = "retro";
 
 export const ThemeToggle = () => {
     const [toggle, setToggle] = useState(false);
-    const { toggleTheme } = useContext(ThemeContext);
 
-    useEffect(() => toggleTheme(toggle), [toggle, toggleTheme]);
+    useEffect(() => {
+        theme = toggle ? "business" : "retro";
+    }, [toggle]);
 
     return (
         <div className="mt-[3%] flex items-center justify-center">
