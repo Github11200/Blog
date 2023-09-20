@@ -1,5 +1,5 @@
 import Posts from "../PostData";
-import { useContext } from "react";
+import { useContext, useEffect } from "react";
 import { Link } from "react-router-dom";
 import { ThemeContext } from "../../App";
 
@@ -8,6 +8,10 @@ import { ThemeContext } from "../../App";
 export const ReactJSPost = ({ postIndex }) => {
     const targetPost = Posts[postIndex];
     const theme = useContext(ThemeContext);
+
+    useEffect(() => {
+        window.scroll(0, 0);
+    }, []);
 
     // Get the post that you want to display and display all of the information
     return (

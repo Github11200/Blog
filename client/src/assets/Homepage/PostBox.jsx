@@ -11,7 +11,7 @@ export const PostBox = ({ title, imageSrc, summaryOfPost, path }) => {
                     <img
                         src={imageSrc}
                         alt="The react js logo with a black background"
-                        className="w-full rounded-t-3xl"
+                        className="w-full rounded-t-3xl h-[24rem]"
                     />
                 </figure>
                 <div className="card-body">
