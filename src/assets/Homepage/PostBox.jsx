@@ -14,11 +14,13 @@ export const PostBox = ({ title, imageSrc, summaryOfPost, path }) => {
                         className="w-full rounded-t-3xl h-[24rem]"
                     />
                 </figure>
-                <div className="card-body">
-                    <h4 className="text-[2rem] font-semibold text-center mb-4">
+                <div className="card-body h-[18rem]">
+                    <h4 className="text-[1.8rem] font-semibold text-center mb-4 font-poppins">
                         {title}
                     </h4>
-                    <p className="text-lg mx-[2rem] mt-3">{summaryOfPost}</p>
+                    <p className="text-xl mx-[2rem] mt-3 font-redhatdisplay">
+                        {summaryOfPost}
+                    </p>
                 </div>
             </NavLink>
         </div>

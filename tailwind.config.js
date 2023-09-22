@@ -2,7 +2,14 @@
 export default {
     content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
     theme: {
-        extend: {},
+        extend: {
+            fontFamily: {
+                tiltwarp: ["Tilt Warp", "cursive"],
+                poppins: ["Poppins", "sans-serif"],
+                redhatdisplay: ["Red Hat Display", "sans-serif"],
+                comfortaa: ["Comfortaa", "cursive"],
+            },
+        },
     },
     plugins: [require("daisyui")],
     daisyui: {

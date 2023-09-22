@@ -2,13 +2,12 @@ import { Homepage } from "./assets/Homepage/Homepage";
 import { Routes, Route } from "react-router-dom";
 import { ReactJSPost } from "./assets/Posts/ReactJSPost";
 import Posts from "./assets/PostData";
-import { theme } from "./assets/Homepage/ThemeToggle";
 
 import "./index.css";
 
 function App() {
     return (
-        <div data-theme={theme}>
+        <div>
             <Routes>
                 <Route path="/" element={<Homepage />}>
                     {/* This maps over all of the posts and creates a path for each of them */}

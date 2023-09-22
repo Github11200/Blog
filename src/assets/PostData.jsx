@@ -72,6 +72,57 @@ let Posts = [
             },
         ],
     },
+    {
+        title: "Simple Web Development Projects",
+        id: "BeginnerProjects",
+        date: "September 21, 2023",
+        author: "Jinay Patel",
+        profilePicture:
+            "https://th.bing.com/th/id/R.fbf52f6fbf2e60204197dde48dc48d17?rik=wkdcHzjbejBxuA&pid=ImgRaw&r=0",
+        imageSrc:
+            "https://th.bing.com/th/id/OIP.B1GepOD6wH9jAtUkVlUEcQAAAA?pid=ImgDet&rs=1",
+        summary:
+            "CSS and Bootstrap have for a very long time been the best ways to style websites, but now there's a new tool, called Tailwind CSS, and it is completely changing the way we design these UIs and makes it much more efficient, fast, and even fun.",
+        bannerImage:
+            "https://th.bing.com/th/id/R.1a19a7fdf806c43afe1e699d53c5f94f?rik=JVs1T4frOmJIfg&pid=ImgRaw&r=0",
+        content: [
+            {
+                sectionTitle: "Introduction",
+                sectionContent:
+                    "If you’re reading this post then I’m guessing you already have some knowledge about HTML, CSS, and JS. The main focus of this post is to help you practice your coding skills with projects that range from simple to somewhat more complex. In each of the sections you’ll find a simple idea, and a description of what you need to build, and you can of course go beyond the given requirements if you want to really stretch your programming skills. The sections in this post are from least complicated to most complicated, so if you go in the order of the sections then you should be able to do all of them. Have fun!",
+            },
+            {
+                sectionTitle: "Rock, Paper, Scissors Game",
+                sectionContent:
+                    "This is a simple project that can help you get a bit of experience with getting inputs from a user from a form. In this project you want to create a selection area where the user can select whether they want rock, paper, or scissors, and then a submit button. Once the user submits you could possibly have some animation or timer if you want to make it more fun to use. Then the computer can randomly choose from one of the options, and check who wins. You can also create a table somewhere in the UI (possibly beneath the input section) in which you can keep track of the score between the computer and player. If you want to go really advanced and have a good knowledge of Node JS then you can make the app so that it is one player vs another player in real-time.",
+            },
+            {
+                sectionTitle: "Calculator",
+                sectionContent:
+                    "This is a fairly classic project for people that are new to web development, and all you really need to do to start off is create a calculator UI that can do simple arithmetic operations. To do this you could create a grid of buttons, and also a text field where you can type in the numbers and arithmetic symbols. Once the user presses the equal sign you could also add in some animations to show the equation that the user entered in some other place and then the answer in the text box. You can also go on to add in more complicated mathematical operations such as trigonometry and calculus.",
+            },
+            {
+                sectionTitle: "To-do List",
+                sectionContent:
+                    "This is a really fun project to do because once you are done building it you can actually use it! To create this you could have a text input field at the top, then when the user presses a button or presses enter you can add that item into a list. If the item that the user enter’s is empty then you can just give the user a warning using something like a try catch block in the code. Once the item is added to the list, there should be three buttons. One to delete the item, one to edit the item which will bring up another text input field at the position of the item, and one checkbox to set the item as completed. To store the items you can either use the browser’s local storage or you can use a database (I would recommend using Firebase) and Node JS to connect the database with the front-end if you have the knowledge to do so.",
+            },
+            {
+                sectionTitle: "Tic Tac Toe Game",
+                sectionContent:
+                    "This project is a bit more advanced than a few of the previous ones but definitely still very achievable. In this game the user should be able to play tic tac toe against the computer. There should be 9 boxes, and when the user clicks you will have to check which box it is within. Then inside that box you could set the display property of an image from none to visible so that you don’t have to actually add the image. Once the user clicks the button the computer should then choose a box, and it can either do this randomly or you can explore some algorithms if you want to get some more knowledge about that. Also, like the rock paper scissors game, you can use Node JS so that two players can play against each other instead of a player playing against a computer.",
+            },
+            {
+                sectionTitle: "Weather App",
+                sectionContent:
+                    "This is definitely the most complicated project on this list because it requires a good knowledge of APIs (specifically REST APIs as they are the most popular). In this app the program should periodically fetch data from a weather API and you can find many of these online. Once the data is fetched you can then display it in a user friendly way, and you could possibly add in images, change the background based on the weather (eg. add in rain if it's raining), show the weather on a graph using a Javascript graphing library such as chart.js, and just do as many features as you want!",
+            },
+            {
+                sectionTitle: "Conclusion",
+                sectionContent:
+                    "Once you’re done with all of these projects you should have a very solid understanding of HTML, CSS, and JS and your portfolio will also look really good with all of these projects, especially if you’ve gone above and beyond. Some next steps could possibly be learning the backend side of things with something like Node JS so you can further improve these apps or create a completely new app (eg. a chat application). ",
+            },
+        ],
+    },
 ];
 
 export default Posts;
