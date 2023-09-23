@@ -3,6 +3,7 @@ import Posts from "../PostData";
 import { Outlet, useLocation } from "react-router";
 import { createContext, useEffect, useState } from "react";
 import { Footer } from "../Footer";
+import BlogImageURL from "../../../public/BlogLogo.png";
 
 export const ThemeContext = createContext("retro");
 
@@ -65,7 +66,7 @@ export const Homepage = () => {
                                 The{" "}
                                 <span className="inline">
                                     <img
-                                        src="../../../public/BlogLogo.png"
+                                        src={BlogImageURL}
                                         className="inline w-[20%] mb-7"
                                     />
                                 </span>{" "}

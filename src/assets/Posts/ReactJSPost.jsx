@@ -2,6 +2,7 @@ import Posts from "../PostData";
 import { useEffect } from "react";
 import { Link } from "react-router-dom";
 import { Footer } from "../Footer";
+import BlogImageURL from "../../../public/BlogLogo.png";
 
 // This is the entire post once the user clicks on it
 // eslint-disable-next-line react/prop-types
@@ -18,10 +19,7 @@ export const ReactJSPost = ({ postIndex }) => {
             <div className="flex justify-center w-[19rem] mx-auto rounded-2xl">
                 <Link to="/" className="w-full">
                     <div className="inline-flex flex-nowrap items-center justify-center w-full mx-0">
-                        <img
-                            src="../../../public/BlogLogo.png"
-                            className="inline w-[50%]"
-                        />
+                        <img src={BlogImageURL} className="inline w-[50%]" />
                     </div>
                 </Link>
             </div>
