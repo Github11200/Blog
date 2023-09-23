@@ -5,7 +5,7 @@ export const PostBox = ({ title, imageSrc, summaryOfPost, path }) => {
     // This is a box which will give a summary of the post
     // It will also link to the post by using the path provided
     return (
-        <div className="shadow-xl hover:shadow-2xl transition-shadow rounded-3xl">
+        <div className="shadow-lg hover:shadow-2xl transition-shadow rounded-3xl">
             <NavLink to={`/posts/${path}`}>
                 <figure>
                     <img

@@ -62,7 +62,14 @@ export const Homepage = () => {
                         </div>
                         <div className="px-[8%] w-full pb-[6%] pt-[2%] mb-[5%] bg-secondary grid justify-items-center">
                             <h1 className="text-9xl mb-[4%] text-center font-tiltwarp">
-                                The HCJ Blog
+                                The{" "}
+                                <span className="inline">
+                                    <img
+                                        src="../../../public/BlogLogo.png"
+                                        className="inline w-[20%] mb-7"
+                                    />
+                                </span>{" "}
+                                Blog
                             </h1>
                             <h2 className="text-4xl text-center font-poppins">
                                 Anything and everything you need to know about

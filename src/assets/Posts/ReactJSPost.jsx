@@ -14,15 +14,14 @@ export const ReactJSPost = ({ postIndex }) => {
 
     // Get the post that you want to display and display all of the information
     return (
-        <div className="pt-10">
-            <div className="flex justify-center w-[19rem] mx-auto py-2 rounded-2xl mb-6">
+        <div className="pt-4">
+            <div className="flex justify-center w-[19rem] mx-auto rounded-2xl">
                 <Link to="/" className="w-full">
                     <div className="inline-flex flex-nowrap items-center justify-center w-full mx-0">
                         <img
-                            src="https://th.bing.com/th/id/OIP.UXBVa-WrPVbQOtkAo9u4rwHaHW?pid=ImgDet&rs=1"
-                            className="rounded-full w-[4rem] mr-4"
+                            src="../../../public/BlogLogo.png"
+                            className="inline w-[50%]"
                         />
-                        <h2 className="text-4xl font-tiltwarp">The HCJ Blog</h2>
                     </div>
                 </Link>
             </div>

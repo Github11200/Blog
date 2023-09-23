@@ -82,7 +82,7 @@ let Posts = [
         imageSrc:
             "https://th.bing.com/th/id/OIP.B1GepOD6wH9jAtUkVlUEcQAAAA?pid=ImgDet&rs=1",
         summary:
-            "CSS and Bootstrap have for a very long time been the best ways to style websites, but now there's a new tool, called Tailwind CSS, and it is completely changing the way we design these UIs and makes it much more efficient, fast, and even fun.",
+            "Have you learned HTMl, CSS, and JS already? Are you looking for a way to practice what you've learned with hands-on projects? Well then, this post is perfect for you! You'll find many projects and some suggestions on how you can complete them!",
         bannerImage:
             "https://th.bing.com/th/id/R.1a19a7fdf806c43afe1e699d53c5f94f?rik=JVs1T4frOmJIfg&pid=ImgRaw&r=0",
         content: [
